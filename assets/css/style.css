@@ -70,3 +70,17 @@ body {
 .nav__item.active {
     background-color: #004AF2;
 }
+
+/* Intro */
+.intro {
+    height: 600px;
+    background: #000 url(../images/intro_bg.jpg) no-repeat center / cover;
+    /* background-size: cover; */
+}
+
+.intro__inner {
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
