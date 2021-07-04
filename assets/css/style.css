@@ -34,6 +34,10 @@ ul, ol {
     height: auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* Container */
 .container {
     width: 100%;
@@ -592,4 +596,66 @@ ul, ol {
     width: 16px;
     height: auto;
     margin-right: 7px;
+}
+
+/* Mission */
+.mission {
+    font-family: 'Lato', sans-serif;
+    padding: 60px 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .16);
+    text-align: center;
+    position: relative;
+    margin-top: -23px;
+}
+
+.mission:before,
+.mission:after {
+    content: "";
+    display: block;
+    width: 41.66666%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.mission:before {
+    background-color: #004AF2;
+    right: 50%;
+}
+
+.mission:after {
+    background-color: #FC2C2B;
+    left: 50%;
+}
+
+.mission__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #004AF2;
+}
+
+.mission__subtitle {
+    font-size: 21px;
+    color: #585858;
+    text-transform: capitalize;
+}
+
+.mission-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .05);
 }
