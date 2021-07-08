@@ -70,7 +70,7 @@ ul, ol {
 }
 
 .header--dark {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .header__inner {
@@ -112,6 +112,14 @@ ul, ol {
 
 .nav__item:not(.active):hover {
     text-decoration: underline;
+}
+
+/* Burger */
+.burger {
+    padding: 0;
+    background: none;
+    border: none;
+    display: none;
 }
 
 /* Intro */
@@ -1057,4 +1065,46 @@ ul, ol {
 
 .text a:hover {
     text-decoration: underline;
+}
+
+
+/* @media */
+@media (max-width: 767px) {
+
+    .header__inner {
+        height: 50px;
+    }
+
+    .nav {
+        display: none;
+        padding-top: 9px;
+        width: 100%;
+        height: auto;
+        min-height: calc(100vh - 50px);
+        background-color: rgba(0, 0, 0, .85);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        text-align: right;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .nav__item {
+
+    }
+
+    .nav__link {
+        padding: 10px 15px;
+    }
+
+    .burger {
+        display: block;
+    }
 }
