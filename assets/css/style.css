@@ -1210,7 +1210,22 @@ ul, ol {
     }
 
     /* Team */
-    
+    .team {
+        flex-direction: column;
+    }
+
+    .team__col {
+        width: 100%;
+    }
+
+    .team__col:last-child {
+        margin-bottom: 0;
+    }
+
+    .team__item {
+        max-width: 370px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 575px) {
