@@ -1192,6 +1192,25 @@ ul, ol {
         order: 2;
         position: static;
     }
+
+    /* Benefits */
+    .benefits {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .benefits__col {
+        width: 100%;
+    }
+
+    .benefits-list {
+        margin-bottom: 30px;
+        max-width: none;
+    }
+
+    /* Team */
+    
 }
 
 @media (max-width: 575px) {
