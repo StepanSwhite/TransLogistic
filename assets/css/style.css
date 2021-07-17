@@ -769,9 +769,8 @@ ul, ol {
 /* News */
 .articles {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 0 -15px 30px;
 }
 
 .articles--column {
@@ -787,6 +786,7 @@ ul, ol {
     width: 100%;
     max-width: 500px;
     margin-bottom: 20px;
+    padding: 0 15px;
 }
 
 .articles__title {
@@ -1070,6 +1070,23 @@ ul, ol {
 
 /* @media */
 @media (max-width: 991px) {
+
+    /* Intro */
+    .intro__title {
+        font-size: 90px;
+    }
+
+    .intro__title-amp {
+        font-size: 120px;
+        right: auto;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0);
+        -o-transform: translate3d(-50%, -50%, 0);
+    }
+
      /* Section */
      .section__title {
         text-align: center;
@@ -1107,6 +1124,11 @@ ul, ol {
 
     .clients__list li {
         max-width: 130px;
+    }
+
+    /* Footer */
+    .footer {
+        background-size: 350px auto;
     }
 }
 
@@ -1173,11 +1195,11 @@ ul, ol {
     }
 
     .intro__title {
-        font-size: 90px;
+        font-size: 70px;
     }
 
     .intro__title-amp {
-        font-size: 120px;
+        font-size: 100px;
         right: auto;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
@@ -1244,6 +1266,23 @@ ul, ol {
     .mission__subtitle {
         font-size: 18px;
     }
+
+    /* Articles */
+    .articles {
+        flex-wrap: wrap;
+    }
+
+    .articles__item {
+        max-width: none;
+    }
+
+    /* Footer */
+    .footer {
+        background-size: 250px auto;
+        background-position: 
+            left -50px bottom -30,
+            right -50px bottom -30;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1276,10 +1315,19 @@ ul, ol {
         padding: 30px 0;
     }
 
+    .section--last {
+        margin-bottom: 30px;
+    }
+
     .section__title {
         font-size: 35px;
     }
 
+    /* Request form */
+    .request-form__header,
+    .request-form__content {
+        padding: 20px;
+    }
 
     /* Clients */
     .clients__list {
@@ -1313,5 +1361,21 @@ ul, ol {
 
     .mission__subtitle {
         font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        background-position: left -120px bottom -80,
+        right -120px bottom -80;
+    }
+}
+
+@media (max-width: 320px) {
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .intro__title-amp {
+        font-size: 50px;
     }
 }
