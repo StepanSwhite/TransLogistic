@@ -14,4 +14,4 @@ $(window).on('scroll', function() {
 
 });
 
-// console.log();
+console.log();
