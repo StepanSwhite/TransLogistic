@@ -109,6 +109,11 @@ ul, ol {
     padding: 31px 15px;
     color: #fff;
     text-decoration: none;
+    transition: background .2s linear;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+    -o-transition: background .2s linear;
 }
 
 .nav__item.active {
